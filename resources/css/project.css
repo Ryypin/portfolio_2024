@@ -1,0 +1,7 @@
+.projectCard{
+    position: relative;
+}
+
+.projectCard:hover .projectInfos{
+    opacity: 1;
+}

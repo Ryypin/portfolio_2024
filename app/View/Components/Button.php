@@ -10,16 +10,18 @@ class Button extends Component
 {
     public $type;
     public $text;
+    public $link;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($type = 'primary', $text = 'Click Me')
+    public function __construct($type = 'primary', $text = 'Click Me', $link = '')
     {
         $this->type = $type;
         $this->text = $text;
+        $this->link = $link;
     }
 
     /**

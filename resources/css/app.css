@@ -1,6 +1,12 @@
+@import url(project.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body{
+    scroll-behavior: smooth;
+}
 
 .h1 {
     @apply text-8xl font-bebas text-white;
@@ -15,7 +21,7 @@
 }
 
 p {
-    @apply text-lg font-open leading-7 text-white;
+    @apply text-lg font-open font-normal leading-7 text-white;
 }
 
 .text-yellow {
@@ -27,15 +33,15 @@ p {
 }
 
 .btn {
-    @apply py-4 px-10 uppercase font-open text-xl border-2 border-yellow rounded-xl;
+    @apply py-4 px-10 uppercase font-open text-xl border-2 border-yellow rounded-xl duration-150;
 }
 
 .btn-primary {
-    @apply bg-yellow text-grey;
+    @apply bg-yellow text-grey hover:bg-grey hover:text-white font-bold;
 }
 
 .btn-secondary {
-    @apply bg-grey text-white;
+    @apply bg-grey text-white hover:bg-yellow hover:text-grey font-bold;
 }
 
 .background-grey {
